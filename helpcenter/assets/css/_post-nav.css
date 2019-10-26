@@ -1,0 +1,83 @@
+/*
+ * The navigation footer at the bottom of the page.
+ */
+
+ .post-nav {
+    width: auto;
+    margin: 0;
+    display: grid;
+    padding: 0;
+    grid-column-gap: 24px;
+    grid-template-rows: auto;
+    grid-template-areas: "previous next";
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid #eaeaea;
+    margin-top: 30px;
+}
+
+.post-nav.singluar {
+    grid-template-columns: 1fr;
+    grid-template-areas: "next";
+}
+
+.post-nav.singular .post-nav-link .post-nav-link-text {
+    text-align: left !important;
+}
+
+.post-nav .post-nav-link {
+    padding: 30px;
+    display: flex;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.post-nav .post-nav-link.post-nav-link-prev {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.post-nav .post-nav-link .post-nav-link-text {
+    text-align: right;
+}
+
+.post-nav .post-nav-link .post-nav-link-icon {
+    padding-left: 0;
+}
+
+.post-nav:last-child {
+    grid-area: next;
+}
+
+.post-nav .post-nav-link .post-nav-link-icon {
+    padding-right: 0;
+}
+
+
+.post-nav .post-nav-link .post-nav-link-text {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
+
+.post-nav .post-nav-link-icon {
+    color: #999;
+    margin: 0;
+    display: block;
+    font-size: 16px;
+    margin: 0 1em;
+}
+
+.post-nav .post-nav-link svg {
+    width: 2em;
+    height: 2em;
+    vertical-align: middle;
+    fill: var(--post-nav-color);
+}
+
+.post-nav .post-nav-link span.post-card-tags:hover {
+    text-decoration: none;
+}
+
+.post-full-comments {
+    display: none;
+}
