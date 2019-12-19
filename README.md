@@ -17,6 +17,11 @@ npm run dev
 The above command builds the theme and watches for changes.  To use the theme, run a local version of Ghost and
 link the theme directory here.
 
+```shell script
+npm run zip
+```
+The `zip` command builds a zip file in `dist` that can be uploaded to the blog.
+
 ## Test
 
 

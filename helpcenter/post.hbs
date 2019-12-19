@@ -13,12 +13,12 @@ into the {body} of the default.hbs template --}}
         <div class="sidebar-inner">
             <nav class="sidebar-nav">
                 <ul>
-                    {{#get "tags" limit="all" order="name asc"}}
+                    {{#get "tags" limit="all" order="sort_order asc"}}
                         {{#foreach tags}}
                             <li id="tag-{{id}}">
                                 <span class="tag-name">{{name}}</span>
                                 <ul>
-                                    {{#get "posts" filter="tags:[{{slug}}]+id:-{{id}}" include="tags"}}
+                                    {{#get "posts" filter="tags:[{{slug}}]+id:-{{id}}" include="tags" order="sort_order asc"}}
                                         {{#foreach posts}}
                                             <li id="post-{{slug}}"><a href="{{url}}">{{title}}</a></li>
                                         {{/foreach}}
