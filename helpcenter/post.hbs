@@ -66,7 +66,7 @@ into the {body} of the default.hbs template --}}
         {{!-- Links to Previous/Next posts --}}
         <div class="read-next">
                 <nav class="post-nav {{^next_post}}singluar{{/next_post}} {{^prev_post}}singluar{{/prev_post}}">
-                    {{#next_post}}
+                    {{#next_post order="sort_order" in="primary_tag"}}
                         <div class="post-nav-link post-nav-link-next">
                             <a href="{{url}}">
                                 <div class="post-nav-link-icon">
@@ -86,7 +86,7 @@ into the {body} of the default.hbs template --}}
                         </div>
                     {{/next_post}}
 
-                    {{#prev_post}}
+                    {{#prev_post order="sort_order" in="primary_tag"}}
                         <div class="post-nav-link post-nav-link-prev">
                             <div>
                                 {{#if primary_tag}}
