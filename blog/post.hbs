@@ -60,6 +60,9 @@ into the {body} of the default.hbs template --}}
             </section>
             {{/if}}
 
+            <div id="disqus_thread"></div>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
             <footer class="post-full-footer">
 
                 {{!-- There are two options for how we display the byline/author-info.
@@ -207,5 +210,18 @@ $(document).ready(function () {
     update();
 
 });
+
+var disqus_config = function () {
+    this.page.url = "{{url absolute="true"}}";
+    this.page.identifier = "ghost-{{comment_id}}";
+};
+
+(function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://zuar-com.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+
 </script>
 {{/contentFor}}
