@@ -43,4 +43,3 @@ ghost start
 
 The themes are now available unter 'Installed Themes' on the 'Design' tab of the admin interface.
 
-hello
