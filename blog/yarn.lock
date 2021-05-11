@@ -1674,9 +1674,9 @@ graceful-fs@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.0.tgz#8d8fdc73977cb04104721cb53666c1ca64cd328b"
 
-gscan@2.7.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/gscan/-/gscan-2.7.0.tgz#c4ae05a4ca4ac9f178b060622b3531b39024bee4"
+gscan@^2.7.0:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/gscan/-/gscan-2.11.0.tgz#d3e8503b8ccbc57f2de97cc413733b203275850a"
   dependencies:
     "@tryghost/extract-zip" "1.6.6"
     "@tryghost/pretty-cli" "1.2.1"
@@ -1865,8 +1865,8 @@ homedir-polyfill@^1.0.1:
     parse-passwd "^1.0.0"
 
 hosted-git-info@^2.1.4:
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.7.1.tgz#97f236977bd6e125408930ff6de3eec6281ec047"
+  version "2.8.9"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
 
 hsl-regex@^1.0.0:
   version "1.0.0"
